@@ -1,0 +1,25 @@
+.mode-change{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #6c83a7;
+    color: var(--li);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+body.night-mode{
+    transition: 0.5s;
+    background-color: rgb(21, 18, 18);
+}
+.night-mode tr{
+    background-color: #f2f2f2;
+}
+.night-mode td{
+    color: #6c83a7;
+}
+.night-mode .mode-change{
+    background-color: #ffffff;
+}

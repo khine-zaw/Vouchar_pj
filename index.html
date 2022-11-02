@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="night-mode.css">
+</head>
+
+<body onload="myLoader()" style="margin:0;">
+    <div id="loader"></div>
+    <div class="container animate-bottom" style="display:none;" id="myDiv">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="my-5">
+                    <h3 class="text-primary ">Voucher App</h3>
+                    <p class="mb-5 text-success">To Fast calculate your costs</p>
+                </div>
+                <div class="d-flex justify-content-between mb-3 product-list">
+                    <h4 class="mb-0 text-primary">Product List</h4>
+                    <button class="btn btn-primary add-row-btn">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th>Product Name</th>
+                            <th class="text-right">Cost</th>
+                            <th class="text-right">Quantity</th>
+                            <th class="text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-center">Total Cost</td>
+                            <td class="text-right">
+                                <h4 class="font-weight-bold mb-0" id="total">0</h4>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <button class="mode-change" onclick="changeMode()">
+        <i class="fa-solid fa-moon" id="modeIcon"></i>
+    </button>
+
+    <script src="assets/jquery/jquey.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/fontawesome/js/all.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
